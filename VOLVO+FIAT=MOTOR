@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int k = 0; // счётчик
+    
+    for(int v = 1; v < 10; v++){
+    for(int o = 0; o < 10; o++){
+    if(v!= o){
+        
+    for(int l = 0; l < 10; l++){
+    if(l != v && l != o){
+    
+        for(int f = 1; f < 10; f++){
+        if(f != v && f != o && f != l){
+        
+        for(int i = 0; i < 10; i++){
+        if(i != v && i != o && i != l && i != f){
+        
+        for(int a = 0; a < 10; a++){
+        if(a != v && a != o && a != l && a != f && a != i){
+        
+        for(int t= 0; t < 10; t++){
+        if(t != v && t != o && t != l && t != f && t != i && t != a){
+        
+        for(int m = 1; m < 10; m++){
+        if(m != v && m != o && m != l && m != f && m != i && m != a && m != t){
+        
+            for(int r = 0; r < 10; r++){
+                if(r != v && r != o && r != l && r != f && r != i && r != a && r != t && r != m){
+                if(10000 * v + 1000 * o + 100 * l + 10 * v + o + 1000 * f + 100 * i + 10 * a + t == 10000 * m + 1000 * o + 100 * t + 10 * o + r){
+                
+                    k++;
+                    cout << k << ")\t" << v << o << l << v << o << "+" << f << i << a << t << "=" << m << o << t << o << r << endl;
+                    
+                }
+                    
+                }
+            
+            }
+        }        
+        }
+        }
+        }    
+        }
+        }
+        }
+        }
+        }
+        }
+    }
+    }
+    }
+    }
+    }
+        
+    return 0;
+}
